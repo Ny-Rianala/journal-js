@@ -6,9 +6,11 @@ const listOfJournal = [
 }
 ];
 
-let journal = listOfJournal;
+const choiceContent = Number(prompt('Welcome to my Onja journal! \n Choose (1)for all the entries.\n  Choose (2) for adding a new entry \n  Choose (3) to quit'));
+
+let journal = listOfJournal[0];
   if (journal === 1){
-    alert()
+    alert(`${title} ${content}`);
   }
 
-const choiceContent = Number(prompt('Welcome to my Onja journal! \n Choose (1)for all the entries.\n  Choose (2) for adding a new entry \n  Choose (3) to quit'));
+
