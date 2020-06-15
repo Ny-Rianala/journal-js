@@ -12,17 +12,22 @@ const journal = [
     content: "It is beautifull day."
   },
   {
-    title: "Today is a good day",
+    title: "Last day",
     content: "Today is a good day"
-}
+} 
 ];
 
+journal.forEach(function(objContent) {
+  alert(objContent.title, objContent.content);
+})
 
-let listOfJournal = ["title", "content"];
-  if (listOfJournal === 1){
-    listOfJournal.push(`${title[0]} ${content[0]}`);
-  }else if(listOfJournal === 2){
-    alert(`${title[1]} ${content[1]}`);
+let listOfJournal = ['title', 'content'];
+for (i = 0; i < listOfJournal.length; i++) {
+  if (listOfJournal === 1) {
+    alert(journal[0])
+  }else if (listOfJournal === 2) {
+    journal.push(journal[1]);
   }else{
-    alert(`There is no list`);
+    alert('There is no content')
   }
+}
